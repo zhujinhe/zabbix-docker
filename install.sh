@@ -9,12 +9,13 @@ if [ "$#" -eq 1 ];
 fi
 
 # Copy the files
-cp -f *.py /usr/local/bin
+mkdir -p /etc/zabbix/script/
+cp -f *.py /etc/zabbix/script
 cp -f *.conf $CONFIG_PATH
 cp -f *.xml /tmp
 
 # tell the user some stuff
-echo "Python scripts copied to /usr/local/bin"
+echo "Python scripts copied to /etc/zabbix/script"
 echo "zabbix-agent configuration files copied to $CONFIG_PATH"
 echo "XML Zabbix Templates copied to /tmp"
 echo ""
