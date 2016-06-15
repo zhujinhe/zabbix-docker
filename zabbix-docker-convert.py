@@ -15,19 +15,19 @@
 import sys
 
 def B(b):
-	return int(float(b))
+    return int(float(b))
 	
 def KB(b):
-	return int(float(b) * 1024)
+    return int(float(b) * 1024)
 	
 def MB(b):
-	return int(float(b) * 1024 * 1024)
+    return int(float(b) * 1024 * 1024)
 
 def GB(b):
-	return int(float(b) * 1024 * 1024 * 1024)
+    return int(float(b) * 1024 * 1024 * 1024)
 	
 def TB(b):
-	return int(float(b) * 1024 * 1024 * 1024 * 1024)
+    return int(float(b) * 1024 * 1024 * 1024 * 1024)
 
 options = {
 	'k':KB,
